@@ -1,0 +1,162 @@
+/* General Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('images/background2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #3a2e2e;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 15px;
+}
+header img {
+  height: 70px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+.hero button {
+  margin-top: 15px;
+  background-color: #b94a48;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Products Section */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+h2 {
+  color: #b94a48;
+  margin-bottom: 20px;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 220px;
+  transition: transform 0.2s;
+}
+.product:hover {
+  transform: scale(1.05);
+}
+.product img {
+  width: 100%;
+  border-radius: 6px;
+}
+.links {
+  margin-top: 20px;
+}
+.links a {
+  color: #b94a48;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Footer */
+footer {
+  background-image: url('images/background2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+footer img {
+  height: 50px;
+}
+.footer-links {
+  margin-top: 10px;
+}
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #3a2e2e;
+}
+.subscribe {
+  margin-top: 15px;
+}
+.subscribe input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.subscribe button {
+  padding: 10px 14px;
+  background-color: #b94a48;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5em;
+    padding: 15px 25px;
+  }
+  .products {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .product {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 1.2em;
+    padding: 20px 30px;
+  }
+  .hero button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+  }
+  .products {
+    gap: 30px;
+  }
+}
